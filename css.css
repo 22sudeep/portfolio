@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rambla&family=Staatliches&display=swap');
+
+body{
+      margin: 0;
+      padding: 0;
+}
+:root{
+      --color-black:#000000;
+      --color-white:#ffffff;
+      --color-border:#ffffff34;
+      --font-staat : 'Staatliches', cursive;
+      --font-os: 'Oswald', sans-serif;
+      --font-ram:  'Rambla', sans-serif;
+}
+/* global classes*/
+
+.font-staat{
+      font: normal 400 18px var(--font-staat);       
+}
+.font-os{
+      font: normal 300 18px var(--font-os);       
+}
+.font-ram{
+      font: normal bold 18px var(--font-ram);       
+}
+
+.font-size-40{
+      font-size: 40px;
+}
+.font-size-34{
+      font-size: 34px;
+}
+.font-size-27{
+      font-size: 27px;
+}
+.font-size-20{
+      font-size:20px;
+}
+.font-size-16{
+      font-size: 16px;
+}
+/*global class*/
+
+.bgcolor-black{ 
+      background-color:var(--color-black) ;
+}
+
+/*header section*/
+
+#header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index:1;
+      transition:left .5s ease;
+}
+
+#header nav{
+      height: 100vh;
+}
+
+
+#header .side-title .navbar-brand{
+      letter-spacing: 2px;
+      color: var(--color-white);
+}
+
+#header .nav-link{
+      margin: .7rem 1rem;
+      text-transform: uppercase;
+      font-family:century gothic;
+      letter-spacing: 3px;
+      
+     
+}
+
+#header .nav-link:hover{
+      color:var(--color-white) !important;
+      transition: 0.5s;
+     
+}
+/*trying animation*/
+
+.d-flex .nav-item:after{
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: " ";
+      display: block;
+      height: 2px;
+      left: 10%;
+      background:cyan;
+      transition: width 0.5s ease 0s, left 0.5s ease 0s;
+     width: 0;
+} 
+
+.d-flex .nav-item:hover:after{ 
+      width: 100%; 
+      left: 0; 
+}
+/* #trying animation*/
+
+#header .toggle-button{
+      background: none;
+      color:gray;
+      position:fixed;
+      top:20px;
+      right: 25px;
+      border: 1px solid var(--color-border);
+}
+
+.toggle-left{
+      left: 0 !important;
+      width: 1000px !important; 
+}
+
+#header .social .mr-3{
+      z-index: 1;
+      padding: 5px;
+      margin: 5px;
+      color: aliceblue;
+      font-size: 20px;
+}
+
+
+#header nav .social{
+      margin-top:45%;
+      margin-left: 5%;
+      
+}
+
+#header nav .social #a:hover{
+      color:blueviolet;
+      transition: 0.5s;
+}
+#header nav .social #b:hover{
+      color:red;
+      transition: 0.5s;
+}
+#header nav .social #c:hover{
+      color:rgb(28, 178, 204);
+      transition: 0.5s;
+}
+#header nav .social #d:hover{
+      color:rgb(34, 214, 94);
+      transition: 0.5s;
+}
+
+/* #header section*/
+/*side main*/
+.banner-area{
+      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Preview.jpg) no-repeat;
+      background-size:cover;
+      width: 100%;
+      height: 100vh;
+}
+
+.site-banner .banner-area .author{
+      margin:0;
+      position:absolute;
+      top:10%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      font-family:Comic Sans MS;
+}
+.site-banner .banner-area .author h1{
+      font-family:century gothic;
+      letter-spacing:3px;
+      
+}
+.site-banner .banner-area .author h5{
+      font-family:century gothic;
+      letter-spacing:1px;
+}
+.site-banner .banner-area .author .author-img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: auto;
+      background: url(me.jpg);
+      background-size: 100%;
+      background-position: 40% 0;
+}
+
+.site-banner .banner-area .author #typed{
+      font-family:century gothic;
+      letter-spacing:1px;
+}
+/* #side main*/
+/*about style*/
+
+.about .row .col-sm-6  .font-os{
+      font-family:Tw Cen MT;
+      letter-spacing:1px;
+      line-height: 1.3;
+      text-align: justify;
+      word-spacing: 2px;
+}
+
+/*#about style*/
+.skill{
+      background:linear-gradient(rgba(34, 32, 32, 0.6),rgba(34, 32, 32, 0.6)), url(web.jpg) no-repeat;
+      background-size:cover;
+}
+
+/*input type style*/
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea{
+      border: none;
+      border-radius: 0;
+      border-bottom:1px solid gray;
+      padding: 1.5rem 1rem;
+}
+
+
+/* #input type style*/
+
+
+
+
+@media screen and (min-width:768px){
+      .toggle-button{
+            display: none;
+      }
+}
