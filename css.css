@@ -52,7 +52,7 @@ body{
       top: 0;
       left: 0;
       width: 100%;
-      z-index:1;
+      z-index:0;
       transition:left .5s ease;
 }
 
@@ -158,7 +158,7 @@ body{
 .site-banner .banner-area .author{
       margin:0;
       position:absolute;
-      top:10%;
+      top:8%;
       left:50%;
       transform:translate(-50%,-50%);
       font-family:Comic Sans MS;
@@ -197,10 +197,51 @@ body{
       word-spacing: 2px;
 }
 
+
+.about p{
+      font-size: 18px;
+      line-height: 1.6;
+      letter-spacing:1px;
+      text-align: justify;
+      word-spacing: 2px;
+      text-shadow: 2px 2px 7px lightgray;
+}
+ 
+.about .row .col-sm-5 img{
+      box-shadow: -2px 14px 49px -19px rgba(0,0,0,0.52);
+}
+
+
+.about .row .col-sm-6 button{
+      width: 140px;
+      height: 45px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      
+      cursor: pointer;
+      outline: none;
+}
 /*#about style*/
 .skill{
       background:linear-gradient(rgba(34, 32, 32, 0.6),rgba(34, 32, 32, 0.6)), url(web.jpg) no-repeat;
       background-size:cover;
+}
+
+
+.col-md-9 .skill .row .col-sm-6 p{
+      font-family:Candara;
+      line-height: 1.6;
+      letter-spacing:1px;
+      text-align: justify;
+      word-spacing: 2px;
 }
 
 /*input type style*/
